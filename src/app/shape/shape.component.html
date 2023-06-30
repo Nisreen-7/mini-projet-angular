@@ -1,0 +1,21 @@
+<div [ngStyle]="{'width.px':width, 'height.px':height, 'background-color':color}" class="shape" (click)="toggleEdit()">
+
+</div>
+
+<div *ngIf="edit">
+    <div>
+        <label>Width</label>
+        <input type="range" min="2" max="500" [(ngModel)]="width">
+
+    </div>
+    <div>
+        <label>Height</label>
+        <input type="range" min="2" max="500" [(ngModel)]="height">
+    </div>
+    <div>
+
+        <label>Color</label>
+
+        <input type="color"[(ngModel)]="color">
+    </div>
+</div>

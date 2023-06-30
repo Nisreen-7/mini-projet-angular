@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'mini-projet-angular';
+  shapeNames = ['Shape 1', 'Shape 2'];
+  newName = '';
+
+  addName() {
+    this.shapeNames.push(this.newName);
+  }
 }
